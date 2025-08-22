@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thou Shalt Keep It Real (TSKIR) — skrrrt</title>
+  <meta name="description" content="Thou Shalt Keep It Real (TSKIR): a reality‑TV parody where biblical wives & side‑chicks tell their side. Shade, drama, receipts." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Thou Shalt Keep It Real (TSKIR)" />
+  <meta property="og:description" content="A reality‑TV parody: shade, drama, and receipts." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=TSKIR" />
+  <meta property="og:url" content="" />
+
+  <!-- Favicon (replace later) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231f2937'/%3E%3Ctext x='50' y='58' font-size='56' text-anchor='middle' fill='white' font-family='Montserrat,Arial'%3E†%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind via CDN (for a single‑file deploy) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter','system-ui','sans-serif'], display: ['Montserrat','Inter','system-ui','sans-serif'] },
+          colors: {
+            brand: {
+              50: '#fff1f7', 100:'#ffe4ef', 200:'#ffbdd6', 300:'#ff94bc', 400:'#ff6aa3', 500:'#ff3b86', 600:'#e02772', 700:'#b81e5c', 800:'#8f1748', 900:'#651034'
+            }
+          },
+          boxShadow: { glow: '0 0 40px rgba(255, 59, 134, 0.35)' }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.06); }
+    .gradient-text { background: linear-gradient(92deg,#fff 0%,#ff6aa3 50%,#ffd1e3 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100">
+  <!-- Navigation -->
+  <header class="sticky top-0 z-40 border-b border-white/10 bg-zinc-950/70 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="text-2xl font-extrabold font-display tracking-tight">TSKIR</span>
+        <span class="text-xs uppercase text-zinc-400">skrrrt</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:text-brand-400">About</a>
+        <a href="#cast" class="hover:text-brand-400">Cast</a>
+        <a href="#watch" class="hover:text-brand-400">Watch</a>
+        <a href="#contact" class="hover:text-brand-400">Contact</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border border-white/10 px-3 py-2 hover:bg-white/5">
+        <span class="sr-only">Open menu</span>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/10">
+      <div class="px-4 py-3 space-y-2">
+        <a href="#about" class="block px-3 py-2 rounded-lg hover:bg-white/5">About</a>
+        <a href="#cast" class="block px-3 py-2 rounded-lg hover:bg-white/5">Cast</a>
+        <a href="#watch" class="block px-3 py-2 rounded-lg hover:bg-white/5">Watch</a>
+        <a href="#contact" class="block px-3 py-2 rounded-lg hover:bg-white/5">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(255,59,134,0.22),transparent_50%),radial-gradient(ellipse_at_bottom_right,rgba(255,255,255,0.06),transparent_50%)]"></div>
+    <div class="mx-auto max-w-7xl px-4 py-24 lg:py-32 relative">
+      <div class="max-w-3xl">
+        <p class="font-semibold text-brand-300 tracking-wide uppercase">A Reality‑TV Parody</p>
+        <h1 class="mt-4 text-5xl md:text-6xl font-extrabold font-display leading-[1.05]">
+          Thou Shalt <span class="gradient-text">Keep It Real</span>
+        </h1>
+        <p class="mt-6 text-zinc-300 text-lg leading-relaxed max-w-2xl">Where the wives and the so‑called side‑chicks of scripture get the mic. It’s divine drama with sequins, shade, and scripture‑adjacent receipts.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#watch" class="inline-flex items-center gap-2 rounded-2xl bg-brand-500 hover:bg-brand-400 px-5 py-3 font-semibold shadow-glow">Watch Trailer (soon)</a>
+          <a href="#cast" class="inline-flex items-center gap-2 rounded-2xl border border-white/15 px-5 py-3 font-semibold hover:bg-white/5">Meet the Cast</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="relative">
+    <div class="mx-auto max-w-7xl px-4 py-16 lg:py-24">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div class="order-2 lg:order-1">
+          <h2 class="text-3xl md:text-4xl font-display font-extrabold">About the Show</h2>
+          <p class="mt-4 text-zinc-300 leading-relaxed">TSKIR (pronounced <em>skrrrt</em>) is a satirical reality‑TV style series where iconic women of the Bible tell their side: the love, the politics, the mess, and the miracles. Confessionals, dramatic reenactments, and reunion‑episode energy—served with contemporary fashion and unapologetic humor.</p>
+          <ul class="mt-6 space-y-3 text-zinc-300">
+            <li class="flex items-start gap-3"><span class="mt-1">✦</span> Confessional chair interviews powered by AI avatars.</li>
+            <li class="flex items-start gap-3"><span class="mt-1">✦</span> Over‑the‑top ensemble drama inspired by scripture.</li>
+            <li class="flex items-start gap-3"><span class="mt-1">✦</span> Bite‑size episodes perfect for socials and streaming.</li>
+          </ul>
+        </div>
+        <div class="order-1 lg:order-2">
+          <div class="aspect-[16/10] rounded-3xl border border-white/10 glass p-6 flex items-end justify-between">
+            <div>
+              <p class="uppercase text-xs tracking-widest text-zinc-400">Tagline</p>
+              <p class="mt-2 text-2xl font-extrabold font-display">“The only commandments are shade, drama, and receipts.”</p>
+            </div>
+            <div class="text-right">
+              <p class="uppercase text-xs tracking-widest text-zinc-400">Acronym</p>
+              <p class="mt-2 text-2xl font-extrabold font-display">TSKIR</p>
+              <p class="text-sm text-zinc-400">aka <span class="italic">skrrrt</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cast -->
+  <section id="cast" class="relative">
+    <div class="mx-auto max-w-7xl px-4 py-16 lg:py-24">
+      <div class="flex items-end justify-between gap-6">
+        <h2 class="text-3xl md:text-4xl font-display font-extrabold">Meet the Cast</h2>
+        <a href="#contact" class="hidden md:inline-flex items-center gap-2 text-sm hover:text-brand-400">Casting & Collabs →</a>
+      </div>
+      <p class="mt-3 text-zinc-300 max-w-3xl">Avatars are styled in modern glam with nods to ancient silhouettes—think jeweled veils, sequined togas, and anointing‑oil highlighter.</p>
+
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card template: duplicate & customize as needed -->
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition">
+          <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-brand-700 to-zinc-900 flex items-center justify-center text-5xl font-extrabold font-display">B</div>
+          <h3 class="mt-4 text-xl font-bold">Bathsheba</h3>
+          <p class="mt-1 text-sm text-zinc-400 uppercase tracking-wider">“I didn’t chase the crown—the crown chased me.”</p>
+          <p class="mt-3 text-zinc-300 text-sm">Queen energy. Ocean‑slick waves. Gold cuffs. Her confessional reads are gentle but lethal.</p>
+        </article>
+
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition">
+          <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-brand-700 to-zinc-900 flex items-center justify-center text-5xl font-extrabold font-display">D</div>
+          <h3 class="mt-4 text-xl font-bold">Delilah</h3>
+          <p class="mt-1 text-sm text-zinc-400 uppercase tracking-wider">“He couldn’t keep a secret—so I kept the plot.”</p>
+          <p class="mt-3 text-zinc-300 text-sm">Velvet hood. Blade‑sharp eyeliner. She speaks in soft tones and ends scenes in silence.</p>
+        </article>
+
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition">
+          <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-brand-700 to-zinc-900 flex items-center justify-center text-5xl font-extrabold font-display">R</div>
+          <h3 class="mt-4 text-xl font-bold">Ruth</h3>
+          <p class="mt-1 text-sm text-zinc-400 uppercase tracking-wider">“Loyal doesn’t mean quiet.”</p>
+          <p class="mt-3 text-zinc-300 text-sm">Soft linen dress with a power‑belt. Strategic kindness. The girls underestimate her at their peril.</p>
+        </article>
+
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition">
+          <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-brand-700 to-zinc-900 flex items-center justify-center text-5xl font-extrabold font-display">S</div>
+          <h3 class="mt-4 text-xl font-bold">Sarah</h3>
+          <p class="mt-1 text-sm text-zinc-400 uppercase tracking-wider">“They laughed when I dreamed. I named the punchline Isaac.”</p>
+          <p class="mt-3 text-zinc-300 text-sm">Silver hair clip, couture robe. Shade hidden in blessings.</p>
+        </article>
+
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition">
+          <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-brand-700 to-zinc-900 flex items-center justify-center text-5xl font-extrabold font-display">H</div>
+          <h3 class="mt-4 text-xl font-bold">Hagar</h3>
+          <p class="mt-1 text-sm text-zinc-400 uppercase tracking-wider">“I saw God in the desert—and myself in the mirror.”</p>
+          <p class="mt-3 text-zinc-300 text-sm">Desert‑rose palette. Mirage shimmer. She does not beg. She negotiates.</p>
+        </article>
+
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition">
+          <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-brand-700 to-zinc-900 flex items-center justify-center text-5xl font-extrabold font-display">T</div>
+          <h3 class="mt-4 text-xl font-bold">Tamar</h3>
+          <p class="mt-1 text-sm text-zinc-400 uppercase tracking-wider">“I don’t break the rules. I read the fine print.”</p>
+          <p class="mt-3 text-zinc-300 text-sm">Veil as statement cape. Contracts are her love language.</p>
+        </article>
+      </div>
+
+      <p class="mt-8 text-sm text-zinc-400">Want a custom lineup (e.g., Jezebel, Esther, Rahab)? We rotate casts each season.</p>
+    </div>
+  </section>
+
+  <!-- Watch / CTA -->
+  <section id="watch" class="relative">
+    <div class="mx-auto max-w-7xl px-4 py-16 lg:py-24">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-display font-extrabold">Watch the Drama</h2>
+          <p class="mt-4 text-zinc-300">Episodes are currently in production. Teasers drop first on socials. Subscribe for early access, casting calls, and reunion show tickets.</p>
+          <form class="mt-6 flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault(); alert('Subscribed! (Replace with your email tool)');">
+            <input type="email" required placeholder="Email address" class="w-full rounded-2xl border border-white/15 bg-zinc-900/60 px-4 py-3 outline-none focus:ring-2 focus:ring-brand-500" />
+            <button class="rounded-2xl bg-brand-500 hover:bg-brand-400 px-5 py-3 font-semibold shadow-glow">Subscribe</button>
+          </form>
+          <p class="mt-3 text-xs text-zinc-500">Replace this form with Mailchimp, Beehiiv, or ConvertKit when ready.</p>
+        </div>
+        <div class="glass rounded-3xl border border-white/10 p-4">
+          <div class="aspect-video rounded-2xl bg-black/60 flex items-center justify-center">
+            <span class="text-zinc-400">Trailer placeholder — embed YouTube/Vimeo when ready</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Collabs -->
+  <section id="contact" class="relative">
+    <div class="mx-auto max-w-7xl px-4 py-16 lg:py-24">
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-12">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="md:col-span-2">
+            <h2 class="text-3xl md:text-4xl font-display font-extrabold">Casting, Collabs & Media</h2>
+            <p class="mt-4 text-zinc-300">For brand partnerships, episode licensing, or press kits, slide into our inbox. We’re particularly open to glam, hair, and jewelry sponsors that understand the assignment.</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="mailto:hello@tskirsquad.example" class="inline-flex items-center gap-2 rounded-2xl border border-white/15 px-5 py-3 font-semibold hover:bg-white/5">hello@tskirsquad.example</a>
+              <a href="#" class="inline-flex items-center gap-2 rounded-2xl border border-white/15 px-5 py-3 font-semibold hover:bg-white/5">@tskirtv</a>
+            </div>
+          </div>
+          <div>
+            <div class="rounded-2xl bg-gradient-to-br from-brand-700 to-zinc-900 p-6 h-full flex items-end">
+              <p class="text-sm text-zinc-200">Production: Lagos ✦ LA ✦ Remote<br/>Format: Short‑form & episodic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-zinc-400">© <span id="year"></span> TSKIR Collective. All rights served with shade.</p>
+      <div class="text-xs text-zinc-500">Made with ♥ for the culture.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
